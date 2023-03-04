@@ -32,7 +32,11 @@ public class Principal {
             }
 
             imc = peso/Math.pow(altura,2);
-            if(imc < )
+            if(imc < 18){
+
+            }else if(true){
+
+            }
 
 
 
