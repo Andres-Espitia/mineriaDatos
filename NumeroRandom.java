@@ -28,8 +28,9 @@ public class NumeroRandom {
         //2 papel
         //3 tiejras
         int numJ1, numJ2, ganador = 0, contador = 0, win1 = 0, win2 = 0, empate = 0;
-        do {
-            while (ganador != 1) {
+
+        while (win1 < 3 && win2 < 3) {
+            do {
                 contador++;
                 numJ1 = (int) (Math.random() * 3) + 1;
                 numJ2 = (int) (Math.random() * 3) + 1;
@@ -68,12 +69,9 @@ public class NumeroRandom {
                     System.out.println("Empate!!!");
                     empate++;
                 }
-
-            }
-
-            System.out.println("el jugador numero 1 lleva ganado: " + win1 + " jugador numero dos lleva gando: " + win2 +" empates: " + empate);
-
-        }while(win1 == 3 || win2 == 3);
+                System.out.println("El jugador numero 1 lleva ganadas: " + win1 + " jugador numero dos lleva gandas: " + win2 + " empates: " + empate);
+            } while (ganador != 1);
+        }
 
     }
 }
