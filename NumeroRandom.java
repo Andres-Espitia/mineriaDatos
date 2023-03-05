@@ -29,7 +29,7 @@ public class NumeroRandom {
         //3 tiejras
         int numJ1, numJ2, ganador = 0, contador = 0, win1 = 0, win2 = 0, empate = 0;
 
-        while (win1 < 3 && win2 < 3) {
+        while (win1 < 2 && win2 < 2) {
             do {
                 contador++;
                 numJ1 = (int) (Math.random() * 3) + 1;
